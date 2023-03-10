@@ -1,0 +1,87 @@
+requisiti --> almeno 2 paginette
+
+
+
+
+
+
+funzionale: controllo diretto del gioco e praticamente
+
+
+
+NON funzionale: (non strettamente necessario ai fini dell'applicazone)
+prestazioni
+non salvare password in chiaro
+
+nei requisiti ci sono solo problemi a livello utente, che è palesemente ignorante su come risolve il proprio problem
+
+quindi nei requisiti NON deve comparire niente che si è visto in OOP (codice, eventuali librerie usate
+
+
+
+seconda parte dei requisiti: si specifica più sintaticamente i meccanismi di base (nel caso di ___ c'è una barra orrizzontale e una palla che ha una certa traiettoria, che rimbalza, che in base a dove rimbalza nella barra prende una nuova angolazione, poi ci sono i blocchi, alcuni si spaccano, altri no, alcuni poi danno anche power ups=
+
+anche nella seconda parte c'è un riassunto dei problemi, e magari anticipo già che qualche task NON funzionale non riesco a farlo ora ecc
+
+
+
+Architettura
+dopo aver parlato del problema, ora parlo di come la strutturo
+
+auto da corsa:
+requisiti: ho bisogno di un veicolo, di una pista e di gareggiare
+
+serve una fonte di energia
+
+l'auto deve essere sterzare(dato che la pista è chiusa) ecc ecc
+!NON DICO CHE HA LE RUOTE
+
+ma lo posso dire nell'architettura, e quindi
+il mezzo ha 4 ruote, la sua fonte di energia si chiama motore, ci può salire SOLO 1 persona, ecc ecc
+
+quali sono gli elementi del sistema
+struttura comportamento interazione
+
+se voglio vedere dove si caricano le immagini, grazie alla lettura del'architettura so dove andare
+
+
+contro "architettura fatta iun modo che sia imposttibile riusare il modello ... " si può fare che: se si usa JavaFX, e da gradle lo si toglie, se non compila più solo la View va tutto bene, altrimenti il codice è inquinato da qualche parte
+
+
+
+
+Desing dettagliato
+alcune sezioni sono privati (la parte prima è quindi necessariamente uguale per tutti)
+ognuno quindi è responsabile della sua sezione
+È il momento di fare il focus:
+avevo questo problema da risolvere: appiattire il dislivello
+io ho fatto le sospensioni, le potevo fare o nel modo A o nel modo B
+
+io ho un problema: il turbo
+volio che lo faccia in 2 secondi
+ho metto un compressore o faccio un turbo a geometria variabile
+
+avevo un problema: ho 2 classi che fanno la stessa cosa
+ho faccio strategy o faccio template metod
+
+devo implementare crtl+z
+posso usare o ___ o usare Memento
+ci sta anche: NON ho usato Memento perchè sarebbe un overkil
+
+quindi:
+1-> feature da implementare
+la macchina saltella --> vogliamo quindi renderla più confrontevole (ecco la feature)
+qui SOLO vetrina di come architetturlarmente risolvere la soluzione, NON di come la ho effettivamente imlementatamente fatta
+
+___
+
+quando si analizza ua feature si riportano gli elementi UML che risolvono quella cosa, punto
+
+##quando non so se c'è 1 o molti, considera Observer##
+
+metodologia di lavoro: anche questo è separato
+inizialmente: abbiamo usare un feature branch tutti insieme? c'è un master? 
+
+
+3.3 --> pavoneggiamenti del propri codice
+lì è elencato cosa denotare del proprio proceggo
